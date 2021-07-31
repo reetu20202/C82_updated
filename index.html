@@ -1,45 +1,47 @@
 <!DOCTYPE html>
-    <head>
-        <title>C82</title>
-        <link rel="stylesheet" href="stylesheet.css">
-        <link rel="main" href="main.js"> 
+<html>
+<head>
+<style>
+body{
 
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    background-position: center;
+    background-size: cover;
+}
+#myCanvas
+{
+    margin-top: 10px;
+	border-width:40px;
+	background-color: white; 
+	border-style:ridge;
+}
 
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
-       
+h1,h4
+{
+	
+	color:red!important;
+	
+}
+</style>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
 
-    </head>
-      
-    
-    
-    <body>
-        <center>
-            <h1>Canvas</h1>
-        </center>
-        
-        <center>
-        
-        <canvas id="myCanvas" width="1000" height="800" > </canvas>
-        <script src="main.js"></script>
-    </center>
-         
-       
-        
-    <center>
-        <input type="number" id="width">
-        <h1>width</h1>
-        <input type="number" id="radius">
-        <h1>radius</h1>
-        <input type="color" id="color">
-        <h1>color</h1>
-    </center>
-    <center>
-        <button onclick="submit();" type="submit">submit</button>
-    
-    </center>
-        
-       
-        
-    </body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+	<title>ASCII value</title>
+</head>
+<body>
+
+<center>
+<h1>Keyboard keys</h1>
+	<!--- Create Canvas element --->
+	<canvas id="myCanvas" width="500" height="300"></canvas>
+	<div id="d1"></div>
+<h4>
+	<b class="text-danger">NOTE : </b> PRESS ANY KEYBOARD KEY 
+</h4>
+
+</center>
+<script src="main.js">
+</script>
+</body>
 </html>
